@@ -1,28 +1,32 @@
 {
   "name": "kontri",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small package that return all countries",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/phaheez/kontri.git"
+    "test": "mocha \"test/*.test.js\"",
+    "publish": "npm publish --access public"
   },
   "keywords": [
     "country"
   ],
-  "author": "Faiz Fasasi (https://github.com/phaheez)",
+  "author": "Faiz Fasasi <faizfasasi@gmail.com> (https://github.com/phaheez)",
   "license": "MIT",
   "url": "https://github.com/phaheez/kontri/blob/main/LICENSE",
   "bugs": {
     "url": "https://github.com/phaheez/kontri/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phaheez/kontri.git"
+  },
+  "homepage": "https://github.com/phaheez/kontri#readme",
   "dependencies": {
     "axios": "^0.27.2"
   },
   "devDependencies": {
-    "eslint": "^8.15.0"
+    "chai": "^4.3.6",
+    "eslint": "^8.15.0",
+    "mocha": "^10.0.0"
   }
 }
